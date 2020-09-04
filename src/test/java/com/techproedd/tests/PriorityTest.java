@@ -6,7 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
-public class AmazonDropDownTest {
+public class PriorityTest {
 
     WebDriver driver;
     @BeforeClass
@@ -36,6 +36,6 @@ public class AmazonDropDownTest {
 
     @AfterClass
     public void tearDown(){
-
+        driver.quit();
     }
 }
