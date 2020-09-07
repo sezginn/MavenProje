@@ -70,6 +70,25 @@ public class ActionClassTest extends TestBase {
 
         actions.sendKeys(Keys.PAGE_UP).perform();
         actions.sendKeys(Keys.ARROW_UP).perform();
+    }
 
+    @Test
+    public void buyukKucukYazma(){
+
+        driver.get("http://google.com");
+        WebElement aramaKutusu = driver.findElement(By.name("q"));
+        // bu standart yazma methodumuz.
+        //aramaKutusu.sendKeys("merhaba nasilsiniz");
+
+        // bu sekilde her karakteri buyuk yapar.
+        // aramaKutusu.sendKeys(Keys.SHIFT + "merhaba nasilsiniz");
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(aramaKutusu).click()
+                .keyDown(Keys.SHIFT)
+                .sendKeys("merhaba")
+                .keyUp(Keys.SHIFT)
+                .sendKeys(" nasilsiniz")
+                .perform();
     }
 }
