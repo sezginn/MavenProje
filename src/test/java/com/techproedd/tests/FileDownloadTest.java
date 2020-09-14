@@ -39,7 +39,7 @@ public class FileDownloadTest extends TestBase {   // DAY 15
 
         Assert.assertTrue(fileUploadedYazisi.isDisplayed());
 
-        // bu test calismadi.
+        // BU TEST CALISMADI.
     }
 
     @Test
