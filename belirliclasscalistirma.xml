@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite - glbtrader.com">
+    <test name="Test - glbtrader testleri">
+
+        <classes>
+            <class name="com.techproedd.tests.Ornek_Webtable"></class>
+            <class name="com.techproedd.tests.WebTablesTest"></class>
+            <class name="com.techproedd.tests.PriorityTest"></class>
+        </classes>
+
+    </test>
+</suite>

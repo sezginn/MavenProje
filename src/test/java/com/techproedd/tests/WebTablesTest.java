@@ -3,9 +3,7 @@ import com.techproedd.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
 public class WebTablesTest extends TestBase {
@@ -80,9 +78,4 @@ public class WebTablesTest extends TestBase {
         WebElement hucre = driver.findElement(By.xpath(xpathDegerim));
         System.out.println(hucre.getText());
     }
-
-
-
-
-    
 }
